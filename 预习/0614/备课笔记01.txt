@@ -1,0 +1,354 @@
+﻿
+# 命名规则
+
+# 01 小驼峰命名法
+# 老王
+myName = "老王"
+
+
+# 02 大驼峰命名法
+# 18
+MyAge = 18
+
+# 03 _连接单词
+# 是否是男人
+is_man = True
+
+
+# 命名规则的使用 一般公司没有要求 可以按照老师课上要求的书写即可
+# 如果公司有要求 按照公司的方式书写即可
+
+# 导入模块
+import keyword
+
+# 查看当前这个版本中有哪些关键字
+print(keyword.kwlist)
+
+
+# 输出
+# print("hello world")
+#
+# print(3.14)
+
+
+# 格式化输出
+
+# 我的年龄18岁
+# print("我的年龄18岁")
+
+# 过了一年
+# print("我的年龄19岁")
+
+# 又过了一年
+# print("我的年龄20岁")
+
+# 我的年龄18岁
+# 我的年龄19岁
+# 我的年龄20岁
+# 结论: 我的年龄x岁
+
+# 定义一个变量 记录年龄 -> 18
+my_age = 18
+
+# %d 叫做格式符号 也可以叫做占位符
+print("我的年龄%d岁" % my_age)
+
+# 19岁
+my_age += 1 # my_age = my_age + 1
+print("我的年龄%d岁" % my_age)
+
+# 20岁
+
+my_age += 1
+
+
+# 名字 小明
+myName = "小明"
+
+# 最终输出的结果:我的名字叫做小明
+# %s = s 等于 str 等于 string
+print("我的名字叫做%s" % myName)
+
+# 年龄 20
+myAge = 20
+# 格式: 我的年龄是20岁
+# %d = d 等于digit
+print("我的年龄是%d岁" % myAge)
+
+# 身高
+myHeight = 180.21
+# 格式: 我的身高为180.21
+# 默认情况下 python中使用%f 为保留小数点后面6位
+# 但是可能在实际开发中需要两位即可
+# %f = f 等于 float
+print("我的身高为%.2f" % myHeight)
+
+# 是否是男人
+isMan = False
+# 格式: 是否是男人:True
+print("是否是男人:%s" % isMan)
+
+
+# 默认情况下 True -> 1  False -> 0
+# 如果想输出bool 如果显示的为True 或者False 那么使用%s 如果显示 1 或者 0 那么使用%d
+
+
+# helloworld
+# ---------
+# 在python中 \n 代表是换行 \n就是回车键
+# print("helloworld\n---------")
+
+
+# 默认情况下 print 打印中有一个换行符
+# print("hello") 是输出的一个简写
+# print("hello", end="\n") 和 print("hello") 等价的
+# print("hello", end="")
+# print("wolrd")
+
+
+# 定义一个变量记录数值
+num = 85
+
+# 班级90分以上的人数占了85%
+# 如果想显示一个单纯的%号 需要写两个
+print("班级90分以上的人数占了%d%%" % num)
+
+
+# 如果为了输出一段文字 需要两个变量的配合 完成
+
+my_name = "小明"
+
+my_age = 20
+
+# 名字:小明 年龄:20
+print("名字:%s 年龄:%d" % (my_name, my_age))
+
+
+# ==========我的名片==========
+# 姓名: lebo
+# QQ:xxxxxxx
+# 手机号:185xxxxxx
+# 公司地址:北京市xxxx
+# ===========================
+
+# 定义几个变量
+# 名字
+MyName = "lebo"
+# QQ
+MyQQ = 123456
+# 手机号
+MyTel = "13900999900"
+# 地址
+MyAddress = "北京市"
+
+print("==========我的名片==========")
+print("姓名:%s" % MyName)
+print("QQ:%d" % MyQQ)
+print("手机号:%s" % MyTel)
+print("公司地址:%s" % MyAddress)
+print("============================")
+
+# python3中input
+# 表达式 (常量 或者 变量 或者按照 使用运算符按照规则进行连接) 10
+my_name = input("请输入您的名字:")
+# 在python3中 无论输入的是什么格式的数据 最终记录数据的变量的类型都是字符串类型
+print(type(my_name))
+print("输出结果:%s" % my_name)
+
+
+
+# 了解
+# python2中输入一共有两个格式 raw_input  和 input
+# python2中的raw_input 和 python3中的input是等价的
+# python2中的input 关注当前用户输入的数据的类型
+
+# +	加	两个对象相加 a + b 输出结果 30
+# -	减	得到负数或是一个数减去另一个数 a - b 输出结果 -10
+# *	乘	两个数相乘或是返回一个被重复若干次的字符串 a * b 输出结果 200
+# /	除	b / a 输出结果 2
+# //	取整除	返回商的整数部分 9//2 输出结果 4 , 9.0//2.0 输出结果 4.0
+# %	取余	返回除法的余数 b % a 输出结果 0
+# **	指数	a**b 为10的20次方， 输出结果 100000000000000000000
+
+# 定义两个变量
+a = 10
+b = 20
+# 加
+ret1 = a + b
+print(ret1)
+
+# 减
+ret2 = a - b
+print(ret2)
+
+# 乘
+ret3 = a * b
+print(ret3)
+
+# 除
+ret4 = a / b
+print(ret4)
+
+# 取整除
+ret5 = 9 // 2
+print(ret5)
+
+# 取余
+ret6 = 10 % 2
+print(ret6)
+
+# 指数
+ret7 = a ** 10000
+# 什么类型 -> int
+print(type(ret7))
+print(ret7)
+
+
+# +=	加法赋值运算符	c += a 等效于 c = c + a
+# -=	减法赋值运算符	c -= a 等效于 c = c - a
+# *=	乘法赋值运算符	c *= a 等效于 c = c * a
+# /=	除法赋值运算符	c /= a 等效于 c = c / a
+# %=	取模赋值运算符	c %= a 等效于 c = c % a
+# **=	幂赋值运算符	c **= a 等效于 c = c ** a
+# //=	取整除赋值运算符	c //= a 等效于 c = c // a
+
+
+
+a = 10
+b = 20
+
+# ret1 = a + b
+# print(ret1)
+
+# 简写(书写简单 少些一个变量名)
+# a += b # 等价的 a = a + b
+# print(a)
+
+
+# ret2 = a - b
+# print(ret2)
+a -= b # a = a - b
+# b -= a $ b = b - a
+# print(a)
+
+# 复合赋值运算符 是一个整体 不可以拆分
+
+# int(x [,base ])	将x转换为一个整数
+
+# 万物皆对象
+# my_str = "12311"
+#
+# ret1 = int(my_str)
+# print(type(ret1))
+
+# 了解
+# my_str = "11"
+# int(需要转换的字符串, 多少进制)
+# 2进制 逢2进1 10
+# 8进制 11
+# 10进制 10
+# 16进制 10
+
+# 把my_str 看成多少进制的字符串
+# 转出来的int类型为10进制
+# ret2 = int(my_str, 16)
+# print(ret2)
+
+
+# float(x )	将x转换为一个浮点数
+# my_str = "3.14"
+# ret2 = float(my_str)
+# print(type(ret2))
+
+
+# str(x )	将对象 x 转换为字符串(给程序员看的)
+# num = 10
+# ret3 = str(num)
+# print(type(ret3))
+
+
+# repr(x )	将对象 x 转换为表达式字符串(给python看的) 了解
+# num = 20
+# ret4 = repr(num)
+# print(type(ret4))
+
+
+# eval(str )	用来计算在字符串中的有效Python表达式,并返回一个对象
+a = 3.14
+
+my_str = "a"
+ret5 = eval(my_str)
+print(type(ret5))
+
+"""
+if 要判断的条件:
+(代码缩进 四个空格 或者Tab键)条件成立时(为真 为True)，要做的事情01
+    条件成立时，要做的事情02
+    条件成立时，要做的事情03
+    条件成立时，要做的事情04
+"""
+
+# 安检
+# # 判断是否有危险品 如果没有危险品 打印可以进入火车站
+# # 定义一个变量来保存是否有危险品(True 没有危险品)
+# is_flag = False
+# # 使用if语句判断
+# if is_flag:
+#     print("可以进入火车站")
+#
+# print("测试")
+
+
+# 网吧
+# # 定义一个变量 保存年龄(年龄大于等于18才可以进入网吧)
+# age = 19
+# # ret = (age >= 18)
+# # print(ret)
+# if age >= 18:
+#     print("可以进入网吧")
+#     print("测试")
+
+
+# 保险柜
+# 定义变量 保存密码 123456
+passwd = "123456"
+# ret = (passwd == "123456")
+# print(ret)
+if passwd == "123456":
+    print("密码正确")
+	
+	
+# ==	检查两个操作数的值是否相等，如果是则条件变为真。	如a=3,b=3，则（a == b) 为 True
+# !=	检查两个操作数的值是否相等，如果值不相等，则条件变为真。	如a=1,b=3，则(a != b) 为 True
+# >	检查左操作数的值是否大于右操作数的值，如果是，则条件成立。	如a=7,b=3，则(a > b) 为 True
+# <	检查左操作数的值是否小于右操作数的值，如果是，则条件成立。	如a=7,b=3，则(a < b) 为 False
+# >=	检查左操作数的值是否大于或等于右操作数的值，如果是，则条件成立。	如a=3,b=3，则(a >= b) 为 True
+# <=	检查左操作数的值是否小于或等于右操作数的值，如果是，则条件成立。	如a=3,b=3，则(a <= b) 为 True
+
+a = 111
+b = 111
+
+# ==
+# 如果a 和 b 相等 我打印一句话 a 等于 b
+# if a == b:
+#     print("a 等于 b")
+
+# !=
+# if a != b:
+#     print("a 不等于 b")
+
+# >
+# if a > b:
+#     print("a 大于 b")
+
+# <
+# if a < b:
+#     print("a 小于 b")
+
+# >=
+# if a >= b:
+#     print("a 大于等于 b")
+
+# <=
+# if a <= b:
+#     print("a 小于等于 b")
