@@ -47,11 +47,11 @@ class mysqlTool(object):
 #
 # sql1 ="SELECT * from finance_app.user WHERE id='d4dc89b856034cb7b70bd7b750fef512'"
 # sql2 ="select * from finance_app.user where mobile =%s"
-# tup1=('15652798209',)
+# tup1=('',)
 #
 #
 # sql3="UPDATE finance_app.`user` SET `name`=%s WHERE id='d4dc89b856034cb7b70bd7b750fef512'"
-# tup2=('范彦彦',)
+# tup2=('',)
 #
 # re1 =mysqlTool(**arg1).doupdate(sql3,tup2)
 # print(re1)
