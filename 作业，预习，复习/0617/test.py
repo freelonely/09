@@ -1,4 +1,3 @@
-coding=utf-8
 import random
 player = input("请输入石头、剪刀、布：\n")
 computer = random.choice(["剪刀","石头","布"])
