@@ -1,0 +1,30 @@
+5：循环输出0-10
+	i = 0
+	while i <= 10:
+		print(i)
+		i += 1
+		
+		
+6：【欢乐逛欢迎您】-->【您迎欢逛乐欢】
+	a = "欢乐逛欢迎您"
+	print(a[::-1])
+	
+1.1 在字符串中查找hello；
+	str = 'a,hello'
+	b = str[2:]
+	print(b)
+	
+	
+	
+1.2用逗号分割str，保存到列表；
+	str = "a,b,c,d"
+	a = str.split(",")
+	print(a)
+
+
+
+1.3 将“笔试题123A”中123替换成进行中；
+	str = "笔试题123A"
+	b = str.replace("123","进行中")
+	print(b)
+	
