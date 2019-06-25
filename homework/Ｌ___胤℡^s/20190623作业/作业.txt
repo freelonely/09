@@ -1,0 +1,29 @@
+one-----两道题
+
+for num in range(0, 11):
+	print(num)
+	
+
+str = "欢乐逛欢迎您"
+new_str = str[::-1]
+print(new_str)
+
+
+
+
+two-----python基础
+str = "a,hello"
+new_str = str.find("hello")
+new_str1 = str[new_str:]
+print(new_str1)
+
+
+
+str = "a,b,c,d"
+new_str = str.split(",")
+print(new_str)
+
+
+str = "123A"
+new_str = str.replace("123", "进行中", 1)
+print(new_str)
