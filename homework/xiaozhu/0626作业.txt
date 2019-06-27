@@ -1,0 +1,51 @@
+第一张：4,5,6
+
+4,
+python2：ASCII 
+python3：UTF-8
+
+5,
+str = 'hello_new_world'
+str.split('_')
+
+6,
+print('1'.rjust(4, '0'))
+
+第二张：第1到第7题
+
+1，不对，key不能是int类型
+2，a | b
+3, a.sort()
+   a.sort(reverse = True)
+   a.reverse()
+4, {"k":1}{"v":2}
+5, sort(key = lambda dict: dict["k"], reverse=True)
+6, 交集 s & d
+   并集 s | d
+   对称差 s ∧ d
+
+7，
+a = ["a", "b"]
+str = ","
+a1 = str.join(a)
+	
+
+第三张：1,2,3
+
+1,
+1对
+2错，元素有序，可以切片
+3错，可以反向索引
+4错，set() 声明空集合
+
+2，
+sum(range(1, 100))
+
+3,
+import random
+print(float(random.randrange(25, 60)))
+
+
+第四张：2
+
+2, list(set(a))
