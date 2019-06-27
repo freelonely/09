@@ -1,0 +1,96 @@
+第一张：4,5,6
+4、
+python2.x 默认使用ASCII
+python3.x 默认使用UTF-8
+
+5、
+str_str = "hello_new_world"
+new_str = str_str.split("_")
+print(new_str)
+
+6、
+num = 1
+print("000"+str(num))
+
+第二张：第1到第7题
+1、
+不正确。key值必须为字符串
+
+2、
+a = [1, 2, 3, 4]
+b = [5, 6, 7, 8]
+set_a = set(a)
+set_b = set(b)
+set_new = set_a | set_b
+new_list = list(set_new)
+print(new_list)
+
+3、
+my_list = [2, 1, 3, 4]
+print(my_list)
+my_list = [2, 1, 3, 4]
+my_list.sort()#正序
+print(my_list)
+my_list = [2, 1, 3, 4]
+my_list.sort(reverse=True)#倒叙
+print(my_list)
+my_list = [2, 1, 3, 4]
+my_list.reverse() #逆序
+print(my_list)
+
+4、
+d = {"k": 1, "v": 2}
+for key ,value in d.items():
+    print(key)
+    print(value)
+
+5、
+my_list = [{"k": 1, "v": 2}, {"k": 12, "v": 22}, {"k": 13, "v": 32}]
+my_list.sort(key=lambda x: x["k"], reverse=True)
+print(my_list)
+
+
+6、
+s = set([1, 2, 3, 4])
+d = set([2, 4, 9, 0, 3])
+set_j = s & d
+set_b = s | d
+set_c = s ^ d
+print(set_j)
+print(set_b)
+print(set_c)
+
+7、
+a = ["a", "b"]
+b = ",".join(a)
+print(b)
+
+第三张：1,2,3
+1、
+错，key只能是字符串
+错，元祖是有序的
+错，可以反向索引
+错， a={}是创建一个空的字典
+
+2、
+num = sum([x for x in range(0, 101)])
+print(num)
+
+3、
+import  random
+
+booll = True
+while booll:
+    num = random.random()
+    new_num = num * 100
+    if 28 <= new_num < 60:
+        print(new_num)
+        booll = False
+    else:
+        booll = True
+
+第四张：2
+
+a = [1, 2, 4, 3, 2, 2, 4]
+set_a = set(a)
+print(list(set_a))
