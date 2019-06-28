@@ -1,0 +1,50 @@
+第一张：4,5,6
+
+python2.x 默认编码格式 acsii
+python3.x 默认编码格式 utf-8
+
+
+str1 = "hello_new_world"
+str2 = str1.split("_")
+print(str2)
+
+
+num = 1
+print("000"+str(num))
+
+
+第二张：第1到第7题
+
+不正确
+
+list1 = [1, 2, 3, 4]
+list2 = [5, 6, 7, 8]
+list1.extend(list2)
+print(list1)
+
+
+a.sort()
+a.sort(reverse = True)
+a.reverse()
+
+
+dict_items([('k', 1), ('v', 2)])
+
+
+
+第三张：1,2,3
+
+列表不可以
+元组是有序的，可以切片
+可以反向索引
+集合不支持索引 空集合 set（）
+
+
+第四张：2
+
+a = [1, 2, 4, 3, 2, 2, 4]
+b = list(set(a))
+print(b)
+
+
+
