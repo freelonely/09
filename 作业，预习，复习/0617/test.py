@@ -8,5 +8,6 @@
 #     print("平局")
 # else:
 #     print("玩家输了")
-
-print("="*50)
+ a = [1,2,3,4]
+ a.pop(1)
+ print(a)
