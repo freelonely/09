@@ -89,21 +89,21 @@ else:
 
 
 # 8、用循环的方式做出石头剪刀布的游戏并且输入中文
-"""
-import random
-print("剪刀石头布1v1决赛")
-computer = random.choice(["剪刀","石头","布"])
-player = input("请输入：\n")
-
-print("用户：%s 电脑：%s" % (player,computer))
-if(player == "剪刀" and computer == "布") or (player == "石头" and computer == "剪刀") or(
-    player == "布" and computer == "石头"):
-    print("玩家胜利")
-elif player == computer:
-    print("平局")
-else:
-    print("电脑胜利")
-"""
+#
+# import random
+# print("剪刀石头布1v1决赛")
+# computer = random.choice(["剪刀","石头","布"])
+# player = input("请输入：\n")
+#
+# print("用户：%s 电脑：%s" % (player,computer))
+# if(player == "剪刀" and computer == "布") or (player == "石头" and computer == "剪刀") or(
+#     player == "布" and computer == "石头"):
+#     print("玩家胜利")
+# elif player == computer:
+#     print("平局")
+# else:
+#     print("电脑胜利")
+#
 
 
 
@@ -128,25 +128,47 @@ else:
 #     j += 1
 
 
-i = 1
-while i <= 5:
-    j = 1
-    while j <= i:
-        print("*",end="")
-        j += 1
-    print()
-    i += 1
-i = 4
-while i > 0:
-    j = 0
-    while j < i:
-        print("*",end="")
-        j += 1
-    print()
-    i -= 1
+# i = 1
+# while i <= 5:
+#     j = 1
+#     while j <= i:
+#         print("* ", end="")
+#         j += 1
+#     print()
+#     i += 1
+# i = 4
+# while i > 0:
+#     j = 0
+#     while j < i:
+#         print("* ", end="")
+#         j += 1
+#     print()
+#     i -= 1
 
 """
 break和continue的区别
 break：跳出循环
 continue：跳出本次循环
 """
+
+
+# str = ("1")
+# print(str.zfill(4))
+
+# str = 121
+# print("%04d" % (str))
+#
+import  random
+booll = True
+while booll:
+    num = random.random()
+    new_num = num * 100
+    if 28 <= new_num < 60:
+        print(new_num)
+        booll = False
+     else:
+         booll = True
+
+# my_list = [{"k": 1, "v": 2}, {"k": 12, "v": 22}, {"k": 13, "v": 32}]
+# my_list.sort(key=lambda x: x["k"], reverse=True)
+# print(my_list)

@@ -1,0 +1,44 @@
+one-----两道题
+
+a = 0
+
+while a <= 10:
+
+    print(a)
+    
+    a += 1
+
+
+
+str = "欢乐逛欢迎您"
+
+print(str[::-1])
+
+
+
+
+two-----python基础
+
+
+
+str = "a,hello"
+
+print(str[2::])
+
+
+
+
+str1 = "a,b,c,d"
+
+str2 = str1.split(",")
+
+print(str2)
+
+
+
+
+str = "笔试题123A中"
+
+str1 = str.replace("123", "进行中")
+
+print(str1)
