@@ -49,8 +49,8 @@ a=[{"k":1,"V":2},{"k":13,"V":32},{"k":12,"V":22}]
 #     num.append(c["k"])
 # num.sort(reverse = True)
 # print(num)
-a.sort(key=lambda x:x["k"],reverse=True)
-print(a)
+# a.sort(key=lambda x:x["k"],reverse=True)
+# print(a)
 
 #集合s=set([1,2,3,4]),d=set([2,4,9,0,3]),请用内置方法写出他们的并集、交集，对称差
 # s=set([1,2,3,4])
@@ -80,9 +80,19 @@ print(sum(range(1,101)))
 #使用random.random方法实现随机输出范围在（25,60）的浮点数
 '''函数随机生成一个[a,b]范围内的浮点数：random.uniform(a, b)'''
 import random
-print(random.uniform(25,60))
+# print(random.uniform(25,60))
 
-
+import  random
+booll = True
+while booll:
+    num = random.random()
+    print(num)
+    # new_num = num * 100
+    # if 28 <= new_num < 60:
+    #     print(new_num)
+    #     booll = False
+    # else:
+    #     booll = True
 """
 1、错（键是可以重复）字典：具有键值映射关系，无序，字典的键是可以重复的任意数据类型且被后边值覆盖前边值
 2、错（不可变数据类型，但是有序可以切片）元组：不能修改，有序，可以索引切片，当元组中只有一个元素时，需要在元素的后面加逗号。
