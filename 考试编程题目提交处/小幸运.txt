@@ -1,0 +1,59 @@
+#16
+a = int(input('请输入成绩:\n'))
+if a >=90:
+    print('A')
+elif 60<= a <90:
+    print('B')
+else:
+    print('C')
+
+#17#17从键盘输入一个用户名和密码，判断是否正确，如果正确则显示‘登录系统成功’，否则显示‘用户名或密码错误’，密码正确即退出，密码错误重新输入。
+#	用户名：username = “username”   密码：password = “passwd”
+usrename = 'username'
+password = 'passwd'
+user = input('请输入用户名:\n')
+passwd = input('请输入密码：\n')
+while True:
+    if user == 'username' and passwd =='passwd':
+        print('登录系统成功')
+        break
+    else:
+        print('用户名或密码错误，请重新输入')
+        user = input('请输入用户名:\n')
+        passwd = input('请输入密码：\n')
+        continue
+
+#18
+class Students(object):
+    def __init__(self,name=None,age=None,sex=None):
+        self.name = name
+        self.age = age
+        self.sex = sex
+    def Study(self):
+        print('study')
+    def xiuxi(self):
+        print('xiuxi')
+a = Students()
+a.Study()
+a.xiuxi()
+
+#19
+li = ['alex','eric','rain']
+a = '_'
+b = a.join(li)
+print(b)
+
+# #20
+# 求每门成绩都大于80的学生名字。
+# （注意：不能有重复的名字出现，需要在一条语句中完成）
+# tb_user
+# name	kecheng	fenshu
+# 张三	语文	81
+# 张三	数学	75
+# 李四	语文	76
+# 李四	数学	90
+# 王五	语文	81
+# 王五	数学	100
+# 王五	英语	90
+# select distinct(name) from tb_user
+# where '语文'>80 and '数学'>80 and '英语'>80
