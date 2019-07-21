@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!--en: 指语言格式，固定-->
+<html lang="en">
+<!--对浏览器可进行一些操作-->
+<head>
+    <meta charset="UTF-8">
+    <title>web练习</title>
+    <!--设置样式-->
+    <!--是固定格式，想对哪块进行样式修改，用起哪块样式名称进行设置---->
+    <!--border: 设置边框的宽度及颜色-->
+    <!--position: 设置相对位置/绝对位置-->
+    <!--margin-top：在实线盒子位置的哪边-->
+    <!--z-index：设置定位位置-->
+    <style>
+        .pop_con form{
+            width: 500px;
+            height: 300px;
+            background: gainsboro;
+            border: 1px solid #0000ff;
+            position: absolute;
+            left: 30%;
+            top: 20%;
+            margin-top: 30px;
+            margin-left: 20px;
+            z-index: 999;
+        }
+    </style>
+</head>
+<!--对页面内部可进行一些操作-->
+<body>
+    <!--class: 定义模式名称, 可在style中调用-->
+    <div class="pop_con">
+        <!--设置表单-->
+        <form action="/commit">
+        <!--h1~h6：设置字体大小，h1最大，h6最小-->
+        <h3>用户登录</h3>
+        <div>
+            <!-- placeholder: 框内的文案，提示语的意思-->
+            <label>用户名：</label><input type="text" name="username" placeholder="请输入用户名">
+        </div>
+        <div>
+            <!-- type:密码用text显示的是明文，用password显示的是*号-->
+            <label>密码：</label><input type="password" name="password" placeholder="请输入密码">
+        </div>
+        <div>
+            <input type="submit"  value="登录">
+            <input type="submit"  value="重置">
+        </div>
+        </form>
+    </div>
+</body>
+</html>

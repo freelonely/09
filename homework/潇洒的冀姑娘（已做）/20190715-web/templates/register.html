@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div>
+        <h3>用户注册</h3>
+        <form>
+            <div>
+                <!--设置段落-->
+                <p>
+                    <label>用户名：</label><input type="text" name="username" placeholder="请输入用户名">
+                </p>
+                <p>
+                    <label>密码：</label><input type="text" name="username" placeholder="请输入密码">
+                </p>
+                <p>
+                    <label>性别：</label>
+                    <input type="radio" name="gender" value="0">男
+                    <input type="radio" name="gender" value="1">女
+                </p>
+                <p>
+                    <label>爱好：</label>
+                    <input type="checkbox" name="" value="sing">唱歌
+                    <input type="checkbox" name="" value="piano">弹琴
+                    <input type="checkbox" name="" value="draw">画画
+                </p>
+                <p>
+                    <label>籍贯：</label>
+                    <!--设置下拉框-->
+                    <select name="site" class="input_site">
+                        <option value="0">北京</option>
+                        <option value="1">上海</option>
+                        <option value="2">天津</option>
+                        <option value="3">广州</option>
+                    </select>
+                </p>
+                <p>
+                    <!--个人描述，文本编辑器-->
+                    <label>个人描述：</label><p>
+                    <textarea name="about">请输入200个字以内</textarea>
+                </p>
+                <p>
+                    <!--上传照片-->
+                    <lable>照片：</lable>
+                    <input type="file">
+                </p>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
